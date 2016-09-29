@@ -220,7 +220,9 @@ namespace NanoBlockExplorer.Console
             using (var db = GetDatabase())
             {
                 Block dbBlock = db.Blocks.GetByHash(block.Hash);
-                if (dbBlock.Height != block.Height || !dbBlock.MerkelRootHash.Equals(block.MerkleRoot, StringComparison.OrdinalIgnoreCase) || !dbBlock.PreviousBlockHash.Equals(block.PreviousBlockHash, StringComparison.OrdinalIgnoreCase))
+                if (block.Height == 0 && block.Hash.Equals(GetGenesisBlockHash(), StringComparison.Ordinal))
+                    return;
+                if (dbBlock.Height != block.Height || !dbBlock.MerkelRootHash.Equals(block.MerkleRoot, StringComparison.OrdinalIgnoreCase) || (block.Height != 0 && !dbBlock.PreviousBlockHash.Equals(block.PreviousBlockHash, StringComparison.OrdinalIgnoreCase)))
                     throw new Exception("Block details do not match");
                 var transactions = db.Transactions.GetTransactionsForBlockHash(block.Hash);
                 if (block.Tx.Count == transactions.Count)//both has same no of transaction
@@ -273,7 +275,10 @@ namespace NanoBlockExplorer.Console
 
         static BitcoinService GetBitcoinService()
         {
-            return new BitcoinService(true);
+            if (ConfigurationManager.AppSettings["Environment"] == "testnet")
+                return new BitcoinService(true);
+            else
+                return new BitcoinService();
         }
 
         static string GetGenesisBlockHash()
