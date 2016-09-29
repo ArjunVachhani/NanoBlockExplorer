@@ -1,0 +1,13 @@
+D:\It's Mine\Projects\NanoBlockExplorer\NanoBlockExplorer.Console\bin\Debug\NanoBlockExplorer.Console.exe.config
+D:\It's Mine\Projects\NanoBlockExplorer\NanoBlockExplorer.Console\bin\Debug\NanoBlockExplorer.Console.exe
+D:\It's Mine\Projects\NanoBlockExplorer\NanoBlockExplorer.Console\bin\Debug\NanoBlockExplorer.Console.pdb
+D:\It's Mine\Projects\NanoBlockExplorer\NanoBlockExplorer.Console\bin\Debug\BitcoinLib.dll
+D:\It's Mine\Projects\NanoBlockExplorer\NanoBlockExplorer.Console\bin\Debug\Newtonsoft.Json.dll
+D:\It's Mine\Projects\NanoBlockExplorer\NanoBlockExplorer.Console\bin\Debug\Newtonsoft.Json.xml
+D:\It's Mine\Projects\NanoBlockExplorer\NanoBlockExplorer.Console\obj\Debug\NanoBlockExplorer.Console.exe
+D:\It's Mine\Projects\NanoBlockExplorer\NanoBlockExplorer.Console\obj\Debug\NanoBlockExplorer.Console.pdb
+D:\It's Mine\Projects\NanoBlockExplorer\NanoBlockExplorer.Console\obj\Debug\NanoBlockExplorer.Console.csprojResolveAssemblyReference.cache
+D:\It's Mine\Projects\NanoBlockExplorer\NanoBlockExplorer.Console\bin\Debug\NanoBlockExplorer.Data.dll
+D:\It's Mine\Projects\NanoBlockExplorer\NanoBlockExplorer.Console\bin\Debug\Dapper.dll
+D:\It's Mine\Projects\NanoBlockExplorer\NanoBlockExplorer.Console\bin\Debug\NanoBlockExplorer.Data.pdb
+D:\It's Mine\Projects\NanoBlockExplorer\NanoBlockExplorer.Console\bin\Debug\Dapper.xml
